@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Reveal Questionnaire</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gender Reveal Questionnaire</h1>
+        <form id="genderRevealForm">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="weeks">Pregnancy Week:</label>
+                <input type="number" id="weeks" name="weeks" min="1" max="42" required>
+            </div>
+            <div class="form-group">
+                <label>1. Morning Sickness:</label>
+                <p>How severe was your morning sickness?</p>
+                <select name="morningSickness" required>
+                    <option value="">Select severity</option>
+                    <option value="none">None</option>
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>2. Cravings:</label>
+                <p>Select the types of food you are craving:</p>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="sweet" name="cravings" value="sweet">
+                    <label for="sweet">Sweet</label>
+                    
+                    <input type="checkbox" id="savory" name="cravings" value="savory">
+                    <label for="savory">Savory</label>
+                    
+                    <input type="checkbox" id="salty" name="cravings" value="salty">
+                    <label for="salty">Salty</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>3. Heart Rate:</label>
+                <p>Select the baby's heart rate at your last appointment:</p>
+                <div class="radio-group">
+                    <input type="radio" id="heartRateLow" name="heartRate" value="0-140" required>
+                    <label for="heartRateLow">0-140</label>
+                    
+                    <input type="radio" id="heartRateHigh" name="heartRate" value="140-above" required>
+                    <label for="heartRateHigh">140 and above</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>4. Skin Changes:</label>
+                <p>Have you noticed any significant changes in your skin?</p>
+                <select name="skinChanges" required>
+                    <option value="">Select an option</option>
+                    <option value="none">None</option>
+                    <option value="dry">Dryness</option>
+                    <option value="oily">Oiliness</option>
+                    <option value="breakouts">Breakouts</option>
+                    <option value="glow">Glow</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>5. Mood Swings:</label>
+                <p>How have your mood swings been during this pregnancy?</p>
+                <select name="moodSwings" required>
+                    <option value="">Select severity</option>
+                    <option value="none">None</option>
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>6. Carrying Position:</label>
+                <p>How are you carrying your baby?</p>
+                <select name="carryingPosition" required>
+                    <option value="">Select a position</option>
+                    <option value="high">High</option>
+                    <option value="low">Low</option>
+                    <option value="outfront">Out Front</option>
+                    <option value="wide">Wide</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>7. Hair Growth:</label>
+                <p>Have you noticed any changes in your hair (thicker, more growth, etc.)?</p>
+                <select name="hairGrowth" required>
+                    <option value="">Select an option</option>
+                    <option value="none">None</option>
+                    <option value="thicker">Thicker</option>
+                    <option value="moreGrowth">More Growth</option>
+                    <option value="lessGrowth">Less Growth</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>8. Nausea:</label>
+                <p>How nauseous have you felt during the first trimester?</p>
+                <select name="nausea" required>
+                    <option value="">Select severity</option>
+                    <option value="none">None</option>
+                    <option value="mild">Mild</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="severe">Severe</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>9. Food Preferences:</label>
+                <p>Are you preferring sweet or sour foods?</p>
+                <select name="foodPreferences" required>
+                    <option value="">Select preference</option>
+                    <option value="sweet">Sweet</option>
+                    <option value="sour">Sour</option>
+                </select>
+           </div>
+            <div class="form-group">
+                <label>10. Breast Changes:</label>
+                <p>Have you noticed changes in your breasts?</p>
+                <select name="breastChanges" required>
+                    <option value="">Select an option</option>
+                    <option value="none">None</option>
+                    <option value="leftLarger">Left breast larger</option>
+                    <option value="rightLarger">Right breast larger</option>
+                    <option value="both">Both larger</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
