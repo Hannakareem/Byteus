@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gender Reveal Questionnaire</title>
+    <title>Guess Who’s Joining the Family? Find Out Now!</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .form-group { display: none; }
+        .form-group.active { display: block; }
+    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Gender Reveal Questionnaire</h1>
-        <form id="genderRevealForm">
-            <div class="form-group">
+        <h1>Guess Who’s Joining the Family? Find Out Now!</h1>
+        <form id="genderRevealForm" onkeydown="checkEnter(event)">
+            <div class="form-group active" id="question1">
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
+                <button type="button" onclick="nextQuestion(1)">Next</button>
             </div>
-            <div class="form-group">
-                <label for="weeks">Pregnancy Week:</label>
-                <input type="number" id="weeks" name="weeks" min="1" max="42" required>
-            </div>
-            <div class="form-group">
+            <div class="form-group" id="question2">
                 <label>1. Morning Sickness:</label>
                 <p>How severe was your morning sickness?</p>
                 <select name="morningSickness" required>
                     <option value="">Select severity</option>
-                    <option value="none">None</option>
                     <option value="mild">Mild</option>
                     <option value="moderate">Moderate</option>
                     <option value="severe">Severe</option>
                 </select>
+                <button type="button" onclick="nextQuestion(2)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question3">
                 <label>2. Cravings:</label>
                 <p>Select the types of food you are craving:</p>
                 <div class="checkbox-group">
@@ -42,8 +43,9 @@
                     <input type="checkbox" id="salty" name="cravings" value="salty">
                     <label for="salty">Salty</label>
                 </div>
+                <button type="button" onclick="nextQuestion(3)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question4">
                 <label>3. Heart Rate:</label>
                 <p>Select the baby's heart rate at your last appointment:</p>
                 <div class="radio-group">
@@ -53,31 +55,32 @@
                     <input type="radio" id="heartRateHigh" name="heartRate" value="140-above" required>
                     <label for="heartRateHigh">140 and above</label>
                 </div>
+                <button type="button" onclick="nextQuestion(4)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question5">
                 <label>4. Skin Changes:</label>
                 <p>Have you noticed any significant changes in your skin?</p>
                 <select name="skinChanges" required>
                     <option value="">Select an option</option>
-                    <option value="none">None</option>
                     <option value="dry">Dryness</option>
                     <option value="oily">Oiliness</option>
                     <option value="breakouts">Breakouts</option>
                     <option value="glow">Glow</option>
                 </select>
+                <button type="button" onclick="nextQuestion(5)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question6">
                 <label>5. Mood Swings:</label>
                 <p>How have your mood swings been during this pregnancy?</p>
                 <select name="moodSwings" required>
                     <option value="">Select severity</option>
-                    <option value="none">None</option>
                     <option value="mild">Mild</option>
                     <option value="moderate">Moderate</option>
                     <option value="severe">Severe</option>
                 </select>
+                <button type="button" onclick="nextQuestion(6)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question7">
                 <label>6. Carrying Position:</label>
                 <p>How are you carrying your baby?</p>
                 <select name="carryingPosition" required>
@@ -87,30 +90,31 @@
                     <option value="outfront">Out Front</option>
                     <option value="wide">Wide</option>
                 </select>
+                <button type="button" onclick="nextQuestion(7)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question8">
                 <label>7. Hair Growth:</label>
                 <p>Have you noticed any changes in your hair (thicker, more growth, etc.)?</p>
                 <select name="hairGrowth" required>
                     <option value="">Select an option</option>
-                    <option value="none">None</option>
                     <option value="thicker">Thicker</option>
                     <option value="moreGrowth">More Growth</option>
                     <option value="lessGrowth">Less Growth</option>
                 </select>
+                <button type="button" onclick="nextQuestion(8)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question9">
                 <label>8. Nausea:</label>
                 <p>How nauseous have you felt during the first trimester?</p>
                 <select name="nausea" required>
                     <option value="">Select severity</option>
-                    <option value="none">None</option>
                     <option value="mild">Mild</option>
                     <option value="moderate">Moderate</option>
                     <option value="severe">Severe</option>
                 </select>
+                <button type="button" onclick="nextQuestion(9)">Next</button>
             </div>
-            <div class="form-group">
+            <div class="form-group" id="question10">
                 <label>9. Food Preferences:</label>
                 <p>Are you preferring sweet or sour foods?</p>
                 <select name="foodPreferences" required>
@@ -118,21 +122,49 @@
                     <option value="sweet">Sweet</option>
                     <option value="sour">Sour</option>
                 </select>
-           </div>
-            <div class="form-group">
+                <button type="button" onclick="nextQuestion(10)">Next</button>
+            </div>
+            <div class="form-group" id="question11">
                 <label>10. Breast Changes:</label>
                 <p>Have you noticed changes in your breasts?</p>
                 <select name="breastChanges" required>
                     <option value="">Select an option</option>
-                    <option value="none">None</option>
                     <option value="leftLarger">Left breast larger</option>
                     <option value="rightLarger">Right breast larger</option>
                     <option value="both">Both larger</option>
                 </select>
+                <button type="button" onclick="nextQuestion(11)">Next</button>
             </div>
-            <button type="submit">Submit</button>
+            <div class="form-group" id="finalMessage">
+                <h2>Thank You!</h2>
+                <p>We are sorry!!</p>
+                <p> Gender reveals are illegal!!! </p>
+                <p>Celebrate the baby, not the gender.</p>
+                <p>Together for a safer, inclusive future!!!</p>
+                <button type="button" onclick="submitForm()">Finish</button>
+            </div>
         </form>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+        let currentQuestion = 1;
+
+        function nextQuestion(current) {
+            document.getElementById(`question${current}`).classList.remove('active');
+            currentQuestion++;
+            document.getElementById(current === 10 ? 'finalMessage' : `question${current + 1}`).classList.add('active');
+        }
+
+        function checkEnter(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent form submission
+                nextQuestion(currentQuestion);
+            }
+        }
+
+        function submitForm() {
+            alert("Thank you for completing the questionnaire! Your responses have been recorded.");
+            // Handle form data submission here if needed
+        }
+    </script>
 </body>
 </html>
