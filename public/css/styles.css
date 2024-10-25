@@ -1,0 +1,176 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Monaco', monospace; /* Use Monaco font */
+    line-height: 1.6;
+    background-image: url(https://media.istockphoto.com/id/1732963074/photo/starry-night-sky-in-space.jpg?b=1&s=612x612&w=0&k=20&c=Dg_mUPuApkS5-v-jitf3IMgjFBYUk1b7EMRxXDcDfJ4=); /* Default background */
+    background-size: cover; /* Make the background cover the entire page */
+    background-position: center; /* Center the background image */
+    color: #122043; /* Text color */
+}
+
+.container {
+    max-width: 900px; /* Increased max-width for better fit */
+    margin: 5rem auto; /* Center container with top and bottom margin */
+    text-align: center; /* Center text inside the container */
+}
+
+/* Front page specific styles */
+.front-page {
+    background-image: url(https://img.freepik.com/free-vector/flat-stages-baby-girl-illustration_23-2148981562.jpg?semt=ais_hybrid);
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    padding: 3rem; /* Increased padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    color: rgb(238, 236, 236); /* Change text color for better contrast */
+}
+
+h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem; /* Increased font size for the heading */
+    color: rgb(251, 246, 246); /* Change heading color to white */
+    font-family: 'Courier New', monospace; /* Set heading font to Courier New */
+    transition: color 0.3s ease; /* Transition for heading color */
+}
+
+.form-group {
+    margin-bottom: 2rem; /* Increased margin for spacing */
+    background-color: rgba(255, 255, 255, 0.8); /* Adjusted to semi-transparent white */
+    border-radius: 8px;
+    padding: 2rem; /* Increased padding for better spacing */
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.3); /* Increased shadow for separation */
+}
+
+/* Specific styles for each question */
+#question1, #question3, #question4, #question5, #question6, #question7, #question8, #question9, #question10, #question11 {
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    color: black; /* Change text color to black for better contrast */
+    padding: 3rem; /* Increased padding */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 2.5rem; /* Increased font size for questions */
+}
+
+#question1 {
+    background-image: url(https://st4.depositphotos.com/19262264/23270/v/450/depositphotos_232707504-stock-illustration-gender-reveal-party-baby-shower.jpg);
+}
+
+#question3 {
+    background-image: url(https://www.cradlewise.com/_next/image/?url=https%3A%2F%2Fs3.us-west-1.amazonaws.com%2Fassets.cradlewise.com%2Fwp-content%2Fuploads%2F2024%2F07%2F04_Jul_coloured.jpeg.jpeg&w=1920&q=75);
+}
+
+/* Specific style for question 4 */
+#question4 {
+    background-image: url(https://www.shutterstock.com/image-vector/heartbeat-pulse-line-baby-footprints-600nw-1012522987.jpg);
+}
+
+/* Specific style for question 5 */
+#question5 {
+    background-image: url(https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_726777_16645481193161389.jpg);
+}
+
+/* Specific style for question 6 */
+#question6 {
+    background-image: url(https://img.freepik.com/free-vector/woman-expressing-strong-various-feelings-emotions_74855-5593.jpg?t=st=1729890473~exp=1729894073~hmac=d20ea74554c284f04a002f3719e02fd170b748bcdc8a105b59302c061cdb65ac&w=1060);
+}
+
+/* Specific style for question 7 */
+#question7 {
+    background-image: url(https://media.cntraveler.com/photos/645d0244a1482192b8812922/16:9/w_2560%2Cc_limit/Pregnant%2520Flying-2023_%252000-Lede.jpg);
+}
+
+/* Specific style for question 8 */
+#question8 {
+    background-image: url(https://img.freepik.com/premium-vector/pregnancy-modern-poster-with-cute-pregnant-woman-with-long-hair-place-text-vector_414360-1291.jpg);
+}
+
+#question9 {
+    background-image: url(https://image.myupchar.com/1313/webp/pregnancy-me-subah-ulti-aur-matli-aana.webp);
+}
+
+#question10 {
+    background-image: url(https://img.freepik.com/premium-vector/eating-pregnancy-pregnant-woman-think-eat-healthy-vegetarian-nutrition-unhealthy-carbs-cupcake-overweight-problem-fast-food-sugar-cartoon-splendid-vector-illustration_81894-8747.jpg);
+}
+
+#question11 {
+    background-image: url(https://image.myupchar.com/1313/webp/pregnancy-me-subah-ulti-aur-matli-aana.webp);
+}
+
+/* Repeat similarly for other question backgrounds if needed */
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #0c0000; /* Slightly lighter than the heading */
+    font-size: 1.5rem; /* Increased font size for labels */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 1rem; /* Increased padding */
+    border: 1px solid #0b0606;
+    border-radius: 4px;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #d10f6a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5rem; /* Increased font size */
+    transition: background-color 0.3s, transform 0.3s; /* Transition for background and transform */
+}
+
+button:hover {
+    background-color: #0ea3d0;
+    transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+.result-container {
+    text-align: center;
+    font-size: 2rem; /* Increased font size for the text in result container */
+}
+
+.message-box {
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    font-size: 1.8rem; /* Increased font size for messages */
+}
+
+.important-message {
+    font-size: 2.5rem; /* Increased font size for important messages */
+    color: #d32f2f;
+    margin-bottom: 1.5rem;
+}
+
+.recommendations {
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 2rem; /* Increased font size for recommendations */
+}
+
+.recommendations ul {
+    list-style-position: inside;
+    margin-top: 1rem;
+    font-size: 1.8rem; /* Increased font size for list items */
+}
+
+.back-btn {
+    background-color: #2196F3;
+}
+
+.back-btn:hover {
+    background-color: #1976D2;
+}
