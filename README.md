@@ -1,96 +1,56 @@
 # Byteus
 <img width="1280" alt="readme-banner" src="https://github.com/user-attachments/assets/35332e92-44cb-425b-9dff-27bcf1023c6c">
 
-# [Project Name] 🎯
+# Gender Reveal 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Byte us
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Hanna - SCMS School Of Engineering And Technology
+- Member 2: Arjun - SCMS School Of Engineering And Technology
+- Member 3:Diya- SCMS School Of Engineering And Technology
 
 ### Project Description
-[2-3 lines about what your project does]
+
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+Have you ever found yourself overwhelmed with the joy and anxiety of pregnancy? How can you possibly navigate the storm of cravings, moods, and baby heartbeats without a playful way to guess the outcome? 
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Introducing the *Guess Who’s Joining the Family?* web application! This interactive questionnaire takes you on a whimsical journey through pregnancy experiences, with a twist—celebrating the baby rather than the gender. Who needs serious predictions when you can have fun?
+
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML, CSS, JavaScript
+- Express.js
+- None (pure JavaScript)
+- Node.js, npm
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+ Not applicable for this project as it's purely a web application.
 
 ### Implementation
 For Software:
 # Installation
-[commands]
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
 
 # Run
-[commands]
-
-### Project Documentation
-For Software:
-
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
+bash
+Copy code
+node server
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- hanna: ui,html
+- arjun: css
+- Diya:server
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
